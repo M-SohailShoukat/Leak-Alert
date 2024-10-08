@@ -1,0 +1,1971 @@
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('../fonts/SFUIDisplay-Bold.eot');
+  src: url('../fonts/SFUIDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUIDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/SFUIDisplay-Bold.woff') format('woff'),
+    url('../fonts/SFUIDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* scroll css start */
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #002581;
+  outline: 1px solid #95abbb;
+  border-radius: 10px;
+}
+
+.main {
+  width: 100%;
+  position: absolute;
+  z-index: 2222;
+  overflow: hidden;
+}
+
+/* scroll css end */
+
+main {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*modal css end*/
+
+/* navbar css start */
+
+a.nav-link.active {
+  color: #002581 !important;
+  font-weight: 700;
+}
+
+
+.nav_contact {
+  background-color: #002581;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.nav_contact:hover {
+  background-color: transparent;
+  border-color: #002581;
+  color: #002581;
+}
+
+
+.navbar_color {
+  background-color: #EBF5FF;
+}
+
+nav ul li {
+  padding: 0px 60px 0 0px;
+
+}
+
+nav ul li a {
+  color: #1A1818 !important;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+}
+
+.nav_contact1 a {
+  float: right;
+  font-family: 'SF UI Display';
+}
+
+/* navbar css end */
+
+/* home_bannar css start */
+.home_bannar {
+  background-color: #EBF5FF;
+  padding: 200px 0px 120px 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+}
+
+.home_bannar1 {
+  padding: 70px;
+}
+
+.home_bannar1 h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #1A1818;
+  font-family: 'SF UI Display';
+}
+
+.home_bannar1 p {
+  font-size: 16px;
+  color: #1A1818;
+  font-family: 'SF UI Display';
+}
+
+.home_bannar2 a {
+  background-color: #002581;
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  font-family: 'SF UI Display';
+}
+
+.home_bannar2 a:hover {
+  background-color: transparent;
+  color: #002581;
+  border: 1px solid #002581;
+}
+
+
+/* home_bannar css end */
+
+
+/* scroll top page css start */
+#button {
+  display: inline-block;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #000000;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #002581;
+  color: #ffffff;
+}
+
+#button:active {
+  background-color: #002581;
+  color: #ffffff;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* scroll top page css end */
+
+
+
+
+/* float button css start */
+.floatme {
+  -webkit-transform: translatex(0px);
+  transform: translatex(0px);
+  -webkit-animation: float 1s ease-in-out infinite;
+  animation: float 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px);
+  }
+
+  50% {
+    -webkit-transform: translatex(-20px);
+    transform: translatex(-20px);
+  }
+
+  100% {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px);
+  }
+
+  50% {
+    -webkit-transform: translatex(-20px);
+    transform: translatex(-20px);
+  }
+
+  100% {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px);
+  }
+}
+
+/* float button css end */
+
+/* scroll down css Start */
+
+/* section::after {
+  content: '';
+  width: 100%;
+  height: 80%;
+
+} */
+
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font: normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+
+
+/* #thanks {
+  background-color: #fff;
+}
+
+#thanks::after {
+  content: none;
+}
+
+#thanks div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#thanks h2 {
+  margin-bottom: 60px;
+  color: #333;
+  font: normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#thanks p {
+  color: #333;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+}
+
+#thanks p a {
+  color: #333;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+#thanks p a:hover {
+  color: #888;
+} */
+
+.demo a {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #002581;
+  font-family: 'SF UI Display';
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+
+}
+
+.demo a:hover {
+  opacity: .5;
+}
+
+
+#section01 a {
+  padding-top: 60px;
+}
+
+#section01 a span {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  /* border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff; 
+  -webkit-transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
+  box-sizing: border-box;
+}
+
+
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* scroll down css end */
+
+
+/* loader css start */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FAFBFC;
+  /* Adjust the background color and opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+}
+
+.loader div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 100%;
+  opacity: 0;
+  border: 5px solid #000000;
+  animation: anim 4s infinite linear;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    width: 0vmin;
+    height: 0vmin;
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100vmin;
+    height: 100vmin;
+  }
+}
+
+.loader div:nth-child(1) {
+  animation-delay: 200ms;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: 400ms;
+}
+
+/* Repeat for other divs */
+
+/* loader css end */
+
+
+
+/* product sec css start */
+.product {
+  background-color: #002581;
+  margin-top: -13px;
+  padding: 80px 0px;
+}
+
+.product1 {
+  padding: 50px 50px 50px 0px;
+}
+
+.product1 h2 {
+  font-size: 47px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+  margin-bottom: 30px;
+}
+
+.product1 p {
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.product2 a {
+  font-size: 15px;
+  border: 2px solid #ffffff;
+  padding: 15px 25px;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'SF UI Display';
+}
+
+.product2 a:hover {
+  background-color: #ffffff;
+  color: #002581;
+  border: 2px solid #002581;
+}
+
+/* product sec css end */
+
+/* accesory sec css start */
+.headsphone {
+  background-color: #EBF5FF;
+  padding: 50px 0px;
+}
+
+.headsphone1 a {
+  background-color: #002581;
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+  /* position: relative;
+  z-index: 2; */
+}
+
+.headsphone1 a:hover {
+  background-color: transparent;
+  color: #002581;
+  border: 1px solid #002581;
+}
+
+.headsphone2 {
+  padding: 70px;
+}
+
+.headsphone2 h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #1A1818;
+  font-family: 'SF UI Display';
+  margin-bottom: 30px;
+}
+
+.headsphone2 p {
+  font-size: 17px;
+  line-height: 2;
+  font-family: 'SF UI Display';
+}
+
+.headsphone2 h6 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+}
+
+/* accesory sec css end */
+
+/* background sec css start */
+.background1 {
+  background-image: url(../images/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 100%;
+  padding: 0px 0 50px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.background2 a {
+  background-color: #002581;
+  color: #ffffff;
+  padding: 20px 50px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+}
+
+.background2 a:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* background sec css end */
+
+/* secure sec css start */
+.mobiles {
+  background-color: #002581;
+  padding: 70px 0px;
+}
+
+.mobiles1 {
+  padding: 50px;
+}
+
+.mobiles1 h2 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+  margin-bottom: 30px;
+}
+
+.mobiles1 p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+
+}
+
+.mobiles2 a {
+  font-size: 15px;
+  border: 2px solid #ffffff;
+  padding: 15px 25px;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'SF UI Display';
+}
+
+.mobiles2 a:hover {
+  background-color: #ffffff;
+  color: #002581;
+  border: 2px solid #002581;
+}
+
+
+/* secure sec css end */
+
+/* test sec css start */
+.test {
+  background-image: url(../images/back1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 100%;
+}
+
+.test_change {
+  background-image: url(../images/back1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  padding: 150px 0px;
+}
+
+
+
+.test1 h2 {
+  text-align: center;
+  color: #1A1818;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 100px 0px 40px 0px;
+}
+
+.card_img1 {
+  background-color: #ffffff;
+  margin: -32px 0px 0px 15px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  padding: 10px;
+}
+
+/* testimonal css */
+
+.gtco-testimonials {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+}
+
+.gtco-testimonials .owl-stage-outer {
+  padding: 30px 0;
+}
+
+.gtco-testimonials .owl-nav {
+  display: none;
+}
+
+.gtco-testimonials .owl-dots {
+  text-align: center;
+}
+
+.gtco-testimonials .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid #002581;
+  margin: 0 5px;
+}
+
+.gtco-testimonials .owl-dots .active {
+  box-shadow: none;
+}
+
+.gtco-testimonials .owl-dots .active span {
+  background: #002581;
+  box-shadow: none;
+  height: 12px;
+  width: 12px;
+  margin-bottom: -1px;
+}
+
+.gtco-testimonials .card {
+  background: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.gtco-testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #95abbb;
+  width: 100px;
+  height: 100px;
+}
+
+.gtco-testimonials .card p {
+  font-size: 17px;
+  color: #434343;
+  padding: 15px;
+}
+
+.gtco-testimonials .center {
+  opacity: 1;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
+
+
+
+
+/* test sec css end */
+
+
+/* footer css start */
+.footer {
+  background-color: #002581;
+  color: #ffffff;
+}
+
+.footer1 p {
+  width: 70%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+  margin-top: 15px;
+}
+
+.social-box li a {
+  margin: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 10px 13px;
+}
+
+.footer2 li a {
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.footer3 h6 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.footer3 p {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+/* footer css end */
+
+/* Shop css start */
+
+.headsphone_color {
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+.headsphone_color1 {
+  background-color: #EBF5FF;
+  padding: 200px 0px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  height: 500px;
+}
+
+.shop1 h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #1A1818;
+}
+
+.cart_change a {
+  background-color: #002581;
+  color: #ffffff;
+  padding: 20px 33px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+  /* position: relative;
+  z-index: 2; */
+}
+
+.cart_change a:hover {
+  background-color: transparent;
+  color: #002581;
+  border: 1px solid #002581;
+}
+
+
+/* quantity change the product css start  */
+#myform {
+  /* text-align: center; */
+  /* padding: 5px; */
+  /* margin: 2%; */
+  margin-top: 20px;
+  font-size: 31px;
+}
+
+.qty {
+  width: 60px;
+  height: 53px;
+  text-align: center;
+  border: 1px solid #002581;
+  border-radius: 5px;
+}
+
+input.qtyplus {
+  width: 50px;
+  height: 51px;
+  background-color: #002581;
+  border-color: #002581;
+  border-radius: 5px;
+}
+
+input.qtyminus {
+  width: 50px;
+  height: 51px;
+  background-color: #002581;
+  border-color: #002581;
+  border-radius: 5px;
+}
+
+/* quantity change the product css end */
+
+/* shop css end */
+
+/* about css start */
+.about {
+  background-color: #EBF5FF;
+  padding: 200px 0px 150px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.about1 {
+  background-color: #002581;
+  margin-top: -40px;
+  padding: 120px 70px 70px 70px;
+}
+
+.about2 {
+  padding: 50px;
+}
+
+.about2 h2 {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+}
+
+.about2 p {
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.about3 a {
+  font-size: 15px;
+  border: 2px solid #ffffff;
+  padding: 15px 25px;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'SF UI Display';
+  position: relative;
+  z-index: 1;
+}
+
+.about3 a:hover {
+  background-color: #ffffff;
+  color: #002581;
+  border: 2px solid #002581;
+}
+
+.about4 {
+  background-color: #ffffff;
+  padding: 100px;
+}
+
+.about5 {
+  /* padding: 60px; */
+  text-align: center;
+}
+
+.about5 h2 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #1A1818;
+  line-height: 2;
+}
+
+.about5 p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1A1818;
+  /* line-height: 2; */
+  margin-bottom: 25px;
+}
+
+.about6 {
+  border: 1px solid #0025814D;
+  padding: 70px;
+}
+
+.about7 {
+  background-color: #EBF5FF;
+  padding: 70px;
+}
+
+.about8 {
+  padding: 50px;
+}
+
+.about8 h2 {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: 'SF UI Display';
+}
+
+.about8 p {
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.about10 {
+  position: absolute;
+  z-index: 99999;
+}
+
+
+/* about css end */
+
+/* payment css start */
+.payment {
+  background-color: #ffffff;
+  padding: 170px 0px 30px 0px;
+}
+
+.payment1 {
+  background-color: #EBF5FF;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.payment2 h2 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 2;
+  color: #000000;
+}
+
+.pay1 h6 {
+  padding: 2px 20px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pay2 {
+  border-bottom: 1px solid #7070704D;
+}
+
+.pay2 p {
+  color: #000000;
+  font-size: 15px;
+
+}
+
+.pay3 {
+  margin-top: 10px;
+  border-bottom: 1px solid #7070704D;
+}
+
+.pay3 p {
+  font-size: 14px;
+
+}
+
+.pay3 h6 {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 2px 15px;
+}
+
+.pay4 {
+  padding: 7px 20px;
+}
+
+.pay5 input {
+  border-color: #000000;
+  border-radius: 1px;
+  padding: 15px;
+}
+
+.pay6 {
+  gap: 17%;
+}
+
+.pay7 label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.pay8 {
+  width: 100%;
+  background-color: #002581;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.pay8:hover {
+  background-color: transparent;
+  color: #002581;
+  border: 1px solid #002581;
+  font-weight: bold;
+}
+
+.pay9 {
+  margin-top: 10px;
+  border-bottom: 1px solid #7070704D;
+}
+
+.pay9 input {
+  width: 10%;
+  text-align: center;
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  background-color: #EBF5FF;
+}
+
+.cont8 input {
+  border-color: #000000;
+  border-radius: 1px;
+  padding: 10px;
+}
+
+
+/* payment css end */
+
+/* contact us css start */
+.contact1 {
+  background-color: #ffffff;
+  padding: 170px 0px 30px 0px;
+}
+
+.contact2 {
+  background-color: #EBF5FF;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cont1 {
+  gap: 40px;
+  /* justify-content: space-between; */
+}
+
+.cont2 input {
+  width: 100%;
+}
+
+/* .cont3 input {
+  width: 100%;
+} */
+
+.cont4 textarea {
+  border-color: #000000;
+}
+
+.cont5 {
+  background-color: #002581;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.cont5:hover {
+  background-color: transparent;
+  color: #002581;
+  border-color: #002581;
+}
+
+.form3 input {
+  padding: 12px 15px;
+  border: 1px solid #000000;
+}
+
+.cont6 {
+  display: flex;
+  align-items: center;
+}
+
+.cont7 h2 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2;
+}
+
+.cont9 {
+  font-size: 11px;
+}
+
+label {
+  display: inline-block;
+  color: #000000;
+  font-weight: 600;
+}
+
+
+
+
+/* contact us css end */
+
+/* cart css start */
+.cart1 {
+  background-color: #ffffff;
+  padding: 190px 0px 30px 0px;
+}
+
+.cart2 {
+  background-color: #EBF5FF;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* cart css end */
+
+/*MODREN CSS end*/
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 1445px) and (max-width: 1599px) {}
+
+@media only screen and (min-width: 1400px) and (max-width: 1444px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav_contact1 a {
+    float: left;
+    font-family: 'SF UI Display';
+  }
+
+  .nav_contact {
+    background-color: #002581;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  nav ul li a {
+    color: #1A1818 !important;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .home_bannar1 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1818;
+    font-family: 'SF UI Display';
+  }
+
+  .home_bannar1 p {
+    font-size: 11px;
+    color: #1A1818;
+    font-family: 'SF UI Display';
+  }
+
+  .home_bannar2 a {
+    background-color: #002581;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    font-family: 'SF UI Display';
+  }
+
+  .demo a {
+    position: absolute;
+    bottom: -15px;
+    left: 44%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #002581;
+    font-family: 'SF UI Display';
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+
+  .home_bannar {
+    background-color: #EBF5FF;
+    padding: 140px 0px 120px 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
+  }
+
+  .product1 h2 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+    margin-bottom: 30px;
+  }
+
+  .product1 p {
+    font-size: 11px;
+    line-height: 2;
+    font-weight: 400;
+  }
+
+  .product2 a {
+    font-size: 12px;
+    border: 2px solid #ffffff;
+    padding: 15px 15px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'SF UI Display';
+  }
+
+  .headsphone2 h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1A1818;
+    font-family: 'SF UI Display';
+    margin-bottom: 20px;
+  }
+
+  .headsphone2 p {
+    font-size: 11px;
+    line-height: 15px;
+    font-family: 'SF UI Display';
+  }
+
+  .headsphone2 h6 {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .headsphone1 a {
+    background-color: #002581;
+    color: #ffffff;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .background1 {
+    background-image: url(../images/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 455px;
+    width: 100%;
+    padding: 0px 0 50px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .mobiles1 h2 {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+    margin-bottom: 20px;
+  }
+
+  .mobiles1 p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .mobiles2 a {
+    font-size: 12px;
+    border: 2px solid #ffffff;
+    padding: 15px 15px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'SF UI Display';
+  }
+
+  .background2 a {
+    background-color: #002581;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 10% !important;
+  }
+
+  .footer1 p {
+    width: 70%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    margin-top: 10px;
+  }
+
+  .footer2 li a {
+    color: #ffffff;
+    line-height: 35px;
+    font-size: 12px;
+  }
+
+  .footer3 p {
+    font-size: 10px;
+    font-weight: 100;
+  }
+
+  .footer3 h6 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .social-box li a {
+    margin: 10px 10px 0px 0px;
+    font-size: 14px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 10px 13px;
+  }
+
+  .shop1 h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #1A1818;
+  }
+
+  .about {
+    background-color: #EBF5FF;
+    padding: 150px 0px 90px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about2 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .about2 p {
+    font-size: 9px;
+    line-height: 12px;
+    font-weight: 400;
+  }
+
+  .about3 a {
+    font-size: 10px;
+    border: 2px solid #ffffff;
+    padding: 10px 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'SF UI Display';
+    position: relative;
+    z-index: 1;
+  }
+
+  .about5 h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1A1818;
+    line-height: 2;
+  }
+
+  .about5 p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #1A1818;
+    /* line-height: 2; */
+    margin-bottom: 25px;
+  }
+
+  .slick-dots li button {
+    display: none !important;
+  }
+
+  .about6 {
+    border: 1px solid #0025814D;
+    padding: 45px;
+  }
+
+
+  .about8 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .about8 p {
+    font-size: 9px;
+    line-height: 13px;
+    font-weight: 400;
+  }
+
+  .about3.mt-5 {
+    margin-top: 25px !important;
+  }
+
+  .headsphone_color1 {
+    background-color: #EBF5FF;
+    padding: 150px 0px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    height: 380px;
+  }
+
+  .payment2 h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 2;
+    color: #000000;
+  }
+
+  .pay4 {
+    padding: 7px 2px;
+  }
+
+  .cont8 input {
+    border-color: #000000;
+    border-radius: 1px;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .footer3 a img {
+    width: 50%;
+  }
+
+  .contact2 {
+    background-color: #EBF5FF;
+    padding: 31px;
+    border-radius: 16px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+
+  .form3 input {
+    padding: 12px 15px;
+    border: 1px solid #000000;
+    font-size: 10px;
+  }
+
+
+}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 300px) and (max-width: 519px) {
+  .home_bannar1 h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #1A1818;
+    font-family: 'SF UI Display';
+  }
+
+  .home_bannar1 {
+    padding: 25px;
+  }
+
+  .home_bannar1 p {
+    font-size: 12px;
+    color: #1A1818;
+    font-family: 'SF UI Display';
+  }
+
+  .home_bannar2 a {
+    background-color: #002581;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    font-family: 'SF UI Display';
+    /* margin-bottom: 32px; */
+  }
+
+  .demo a {
+    position: absolute;
+    bottom: -15px;
+    left: 37%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #002581;
+    font-family: 'SF UI Display';
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+
+  .product1 h2 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+    margin-bottom: 30px;
+  }
+
+  .product1 {
+    padding: 29px;
+  }
+
+  .product1 p {
+    font-size: 11px;
+    line-height: 2;
+    font-weight: 400;
+  }
+
+  .product2 a {
+    font-size: 8px;
+    border: 2px solid #ffffff;
+    padding: 13px 13px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'SF UI Display';
+  }
+
+  .headsphone2 h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #1A1818;
+    font-family: 'SF UI Display';
+    margin-bottom: 12px;
+  }
+
+  .headsphone2 p {
+    font-size: 11px;
+    line-height: 2;
+    font-family: 'SF UI Display';
+  }
+
+  .headsphone2 {
+    padding: 30px;
+  }
+
+  .headsphone1 a {
+    background-color: #002581;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .headsphone2 h6 {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .background1 {
+    background-image: url(../images/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 100%;
+    padding: 0px 0 50px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .background2 a {
+    background-color: #002581;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .mobiles1 h2 {
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+    margin-bottom: 30px;
+  }
+
+  .mobiles1 {
+    padding: 31px;
+  }
+
+  .mobiles1 p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  .mobiles2 a {
+    font-size: 8px;
+    border: 2px solid #ffffff;
+    padding: 13px 13px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'SF UI Display';
+  }
+
+  .test1 h2 {
+    text-align: center;
+    color: #1A1818;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 75px 0px 40px 0px;
+  }
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 20% !important;
+  }
+
+  .gtco-testimonials .card p {
+    font-size: 16px;
+    color: #434343;
+    padding: 15px;
+  }
+
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    display: none !important;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .social-box {
+    justify-content: center;
+  }
+
+  .footer1 p {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    margin-top: 15px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 0px !important;
+  }
+
+  /*.nav_change12 {*/
+  /*    justify-content: right !important;*/
+  /*}*/
+
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+  }
+
+  .nav_contact1 a {
+    font-family: 'SF UI Display';
+    display: block;
+    float: inherit;
+  }
+
+  .shop1 h2 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1A1818;
+  }
+
+  .about {
+    background-color: #EBF5FF;
+    padding: 170px 0px 70px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about1 {
+    background-color: #002581;
+    margin-top: -40px;
+    padding: 75px 40px 40px 40px;
+  }
+
+  .about2 h2 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .about2 p {
+    font-size: 11px;
+    line-height: 2;
+    font-weight: 400;
+  }
+
+  .about2 {
+    padding: 0px;
+  }
+
+  .about3 a {
+    font-size: 10px;
+    border: 2px solid #ffffff;
+    padding: 12px 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'SF UI Display';
+    position: relative;
+    z-index: 1;
+  }
+
+  .group_change {
+    margin-top: 20px;
+  }
+
+  .about4 {
+    background-color: #ffffff;
+    padding: 50px;
+  }
+
+  .about6 {
+    border: 1px solid #0025814D;
+    padding: 30px;
+  }
+
+  .about5 h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1A1818;
+    line-height: 2;
+  }
+
+  .about5 p {
+    font-size: 5px;
+    font-weight: 500;
+    color: #1A1818;
+    line-height: 2;
+    margin-bottom: 25px;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-prev {
+    left: -25px;
+    display: none !important;
+  }
+
+  .about7 {
+    background-color: #EBF5FF;
+    padding: 31px;
+  }
+
+  .about8 {
+    padding: 10px;
+  }
+
+  .about8 h2 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'SF UI Display';
+  }
+
+  .about8 p {
+    font-size: 11px;
+    line-height: 2;
+    font-weight: 400;
+  }
+
+  .headsphone_color1 {
+    background-color: #EBF5FF;
+    padding: 150px 0px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    height: 350px;
+  }
+
+  .payment2 h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 2;
+    color: #000000;
+  }
+
+  .cart1 {
+    background-color: #ffffff;
+    padding: 190px 15px 30px 15px;
+  }
+
+  .payment {
+    background-color: #ffffff;
+    padding: 170px 10px 30px 10px;
+  }
+
+  label {
+    display: inline-block;
+    color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .pay4 {
+    padding: 16px 0px;
+    width: 60%;
+  }
+
+  .pay7 label {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .contact1 {
+    background-color: #ffffff;
+    padding: 170px 10px 20px 10px;
+  }
+
+  .contact2 {
+    background-color: #EBF5FF;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+
+  .form3 input {
+    padding: 12px 15px;
+    border: 1px solid #000000;
+    font-size: 11px;
+  }
+
+  .cont6 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .home_bannar {
+    background-color: #EBF5FF;
+    padding: 10px 0px 10px 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
+  }
+
+}
