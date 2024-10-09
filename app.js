@@ -63,12 +63,9 @@ document.onkeydown = function (e) {
 if (window.location.pathname.endsWith('.html')) {
     const newUrl = window.location.pathname.replace('.html', '');
 
-    // Prevent removing '.html' for index.html (at root level)
+    // Only remove .html for non-index pages
     if (!newUrl.endsWith('/index')) {
         window.history.replaceState(null, '', newUrl);
-    } else {
-        // If it is index.html, hide it completely
-        window.history.replaceState(null, '', '/');
     }
 }
 
