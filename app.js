@@ -61,11 +61,8 @@ document.onkeydown = function (e) {
 
 // Check if the URL ends with .html
 if (window.location.pathname.endsWith('.html')) {
+    console.log(1)
     const newUrl = window.location.pathname.replace('.html', '');
-
-    // Only remove .html for non-index pages
-    if (!newUrl.endsWith('/index')) {
-        window.history.replaceState(null, '', newUrl);
-    }
+    window.history.replaceState(null, '', newUrl);
 }
 
