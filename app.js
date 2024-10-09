@@ -61,8 +61,12 @@ document.onkeydown = function (e) {
 
 // Check if the URL ends with .html and rewrite it
 if (window.location.pathname.endsWith('.html')) {
-    console.log(1)
+    // Get the current path without the '.html'
     const newUrl = window.location.pathname.replace('.html', '');
-    window.history.replaceState(null, '', newUrl);
+
+    // Prevent removing '.html' for index.html
+    if (!newUrl.endsWith('/index')) {
+        window.history.replaceState(null, '', newUrl);
+    }
 }
 
