@@ -59,7 +59,7 @@ document.onkeydown = function (e) {
     }
 };
 
-// Check if the URL ends with .html
+// Check if the URL ends with .html and rewrite it
 if (window.location.pathname.endsWith('.html')) {
     console.log(1)
     const newUrl = window.location.pathname.replace('.html', '');
