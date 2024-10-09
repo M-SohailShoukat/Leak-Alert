@@ -59,10 +59,12 @@ document.onkeydown = function (e) {
     }
 };
 
-// Check if the URL ends with .html and rewrite it
-if (window.location.pathname.endsWith('.html')) {
-    console.log(1)
-    const newUrl = window.location.pathname.replace('.html', '');
+// JavaScript solution for GitHub Pages
+if (window.location.pathname.endsWith('/index.html')) {
+    console.log('Hiding index.html from URL');
+    
+    // Remove 'index.html' from the URL and update it to just the base path
+    const newUrl = window.location.pathname.replace('index.html', '');
     window.history.replaceState(null, '', newUrl);
 }
 
