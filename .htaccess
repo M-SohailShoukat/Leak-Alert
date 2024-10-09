@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    # Redirect index.html to the main URL (i.e., the base URL)
+    RewriteRule ^index\.html$ / [R=301,L]
+    # Remove .html extension from all files
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.*)$ $1.html [L]
+</IfModule>
