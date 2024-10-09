@@ -61,7 +61,6 @@ document.onkeydown = function (e) {
 
 // JavaScript solution for GitHub Pages
 if (window.location.pathname.endsWith('.html')) {
-    // Remove '.html' from the URL
     let newUrl = window.location.pathname.replace('.html', '');
 
     // If it's index.html, remove it completely and show the base URL
