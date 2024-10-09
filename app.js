@@ -59,14 +59,16 @@ document.onkeydown = function (e) {
     }
 };
 
-// Check if the URL ends with .html and rewrite it
+// Check if the URL ends with .html
 if (window.location.pathname.endsWith('.html')) {
-    // Get the current path without the '.html'
     const newUrl = window.location.pathname.replace('.html', '');
 
-    // Prevent removing '.html' for index.html
+    // Prevent removing '.html' for index.html (at root level)
     if (!newUrl.endsWith('/index')) {
         window.history.replaceState(null, '', newUrl);
+    } else {
+        // If it is index.html, hide it completely
+        window.history.replaceState(null, '', '/');
     }
 }
 
